@@ -15,12 +15,12 @@ const HeroSection = () => {
                 <p className='w-160 text-7xl font-extrabold'>
                     Supercharge Your Digital Workflow
                 </p>
-                <p className='w-130 text-[#627382]'>
+                <p className='w-130 flex flex-col text-[#627382]'>
                     Access premium AI tools, design assets, templates, and productivity
                     software—all in one place. Start creating faster today.
-                    <p>
+                    <span>
                         Explore Products
-                    </p>
+                    </span>
                 </p>
                 <div className=' flex gap-4'>
                     <button className='py-6 font-bold btn rounded-full text-white bg-linear-to-r from-[#4F39F6] to-[#9514FA]'>Explore Products</button>

@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "name": "Pro Resume Builder",
+        "description": "Create professional resumes with ATS optimization and customizable templates.",
+        "price": 29.99,
+        "period": "Monthly",
+        "tag": "Popular",
+        "tagType": "Popular",
+        "features": [
+            "100+ templates",
+            "ATS optimization",
+            "Export to PDF"
+        ],
+        "icon": "https://cdn-icons-png.flaticon.com/512/909/909212.png"
+    },
+    {
+        "id": 2,
+        "name": "AI Writing Assistant",
+        "description": "Generate high-quality content for blogs, emails, and social media.",
+        "price": 49.99,
+        "period": "Monthly",
+        "tag": "Best Seller",
+        "tagType": "Best Seller",
+        "features": [
+            "SEO-friendly content",
+            "Multi-language support",
+            "Plagiarism checker"
+        ],
+        "icon": "https://cdn-icons-png.flaticon.com/512/19037/19037555.png"
+    },
+    {
+        "id": 3,
+        "name": "Graphic Design Pro",
+        "description": "Design stunning visuals with easy-to-use tools and templates.",
+        "price": 99.99,
+        "period": "Yearly",
+        "tag": "New",
+        "tagType": "New",
+        "features": [
+            "Drag-and-drop editor",
+            "1000+ templates",
+            "Social media ready"
+        ],
+        "icon": "https://cdn-icons-png.flaticon.com/512/841/841385.png"
+    },
+    {
+        "id": 4,
+        "name": "Fitness Tracker App",
+        "description": "Track your workouts, diet, and progress in one place with smart tracking tools.",
+        "price": 9.99,
+        "period": "Monthly",
+        "tag": "Popular",
+        "tagType": "Popular",
+        "features": [
+            "Workout plans",
+            "Nutrition tracker",
+            "Progress analytics"
+        ],
+        "icon": "https://cdn-icons-png.flaticon.com/512/5478/5478986.png"
+    },
+    {
+        "id": 5,
+        "name": "Cloud Storage Pro",
+        "description": "Secure cloud storage with easy file sharing and collaboration tools.",
+        "price": 199.99,
+        "period": "Yearly",
+        "tag": "Best Seller",
+        "tagType": "Best Seller",
+        "features": [
+            "1TB storage",
+            "End-to-end encryption",
+            "Team collaboration"
+        ],
+        "icon": "https://cdn-icons-png.flaticon.com/512/4380/4380600.png"
+    },
+    {
+        "id": 6,
+        "name": "Video Editor Suite",
+        "description": "Edit professional videos with powerful editing tools and effects.",
+        "price": 59.99,
+        "period": "One-time",
+        "tag": "Popular",
+        "tagType": "Popular",
+        "features": [
+            "4K video support",
+            "Multi-track editing",
+            "Special effects"
+        ],
+        "icon": "https://cdn-icons-png.flaticon.com/512/6348/6348571.png"
+    },
+    {
+        "id": 7,
+        "name": "Language Learning App",
+        "description": "Learn new languages with interactive lessons and quizzes.",
+        "price": 14.99,
+        "period": "Monthly",
+        "tag": "New",
+        "tagType": "New",
+        "features": [
+            "Interactive lessons",
+            "Speech recognition",
+            "Progress tracking"
+        ],
+        "icon": "https://cdn-icons-png.flaticon.com/128/1973/1973923.png"
+    },
+    {
+        "id": 8,
+        "name": "Online Course Platform",
+        "description": "Create and sell online courses with a complete learning management system.",
+        "price": 299.99,
+        "period": "Yearly",
+        "tag": "Best Seller",
+        "tagType": "Best Seller",
+        "features": [
+            "Course builder",
+            "Student analytics",
+            "Payment integration"
+        ],
+        "icon": "https://cdn-icons-png.flaticon.com/512/4762/4762311.png"
+    }
+]

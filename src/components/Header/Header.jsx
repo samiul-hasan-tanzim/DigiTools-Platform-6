@@ -1,7 +1,7 @@
 import { ShoppingCart } from "lucide-react";
 
 
-const Header = () => {
+const Header = ({ cartData }) => {
     return (
         <div className='bg-base-100 shadow-sm font-semibold'>
             <div className='container mx-auto py-3'>
@@ -35,7 +35,9 @@ const Header = () => {
                     <div className="navbar-end gap-3">
                         <div className="flex relative">
                             <ShoppingCart />
-                            <p className="relative -top-2 -left-2 bg-red-500 w-4 h-4 text-[10px] text-white flex justify-center items-center rounded-full">5</p>
+                            {
+                                cartData.length > 0 ? <p className="relative -top-2 -left-2 bg-red-500 w-4 h-4 text-[10px] text-white flex justify-center items-center rounded-full">{cartData.length}</p> : null
+                            }
                         </div>
                         <p>Login</p>
                         <a className="btn rounded-full text-white bg-linear-to-r from-[#4F39F6] to-[#9514FA]">Get Started</a>
