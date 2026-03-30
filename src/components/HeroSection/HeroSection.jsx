@@ -1,5 +1,5 @@
 import { Play } from 'lucide-react';
-import image from '../../../assets/banner.png';
+import image from '../../assets/banner.png';
 
 const HeroSection = () => {
     return (
