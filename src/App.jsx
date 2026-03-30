@@ -5,6 +5,7 @@ import HeroSection from './components/HeroSection/HeroSection'
 import ProductsShowcaseSection from './components/ProductsShowcaseSection/ProductsShowcaseSection'
 import StatsSection from './components/StatsSection/StatsSection'
 import { toast } from 'react-toastify'
+import GetStarted from './components/GetStarted/GetStarted'
 
 
 
@@ -35,6 +36,7 @@ function App() {
       <HeroSection></HeroSection>
       <StatsSection></StatsSection>
       <ProductsShowcaseSection dataPromise={dataPromise} handleDataForCart={handleDataForCart} cartData={cartData} setCartData={setCartData}></ProductsShowcaseSection>
+      <GetStarted></GetStarted>
     </>
   )
 }
