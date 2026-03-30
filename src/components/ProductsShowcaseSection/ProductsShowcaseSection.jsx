@@ -21,7 +21,7 @@ const ProductsShowcaseSection = ({ dataPromise, handleDataForCart, cartData }) =
             </div>
 
             {
-                activeTab === 'products' ? <Products allData={allData} handleDataForCart={handleDataForCart}></Products> : <Cart></Cart>
+                activeTab === 'products' ? <Products allData={allData} handleDataForCart={handleDataForCart}></Products> : <Cart cartData={cartData}></Cart>
             }
 
 
