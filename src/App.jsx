@@ -34,7 +34,7 @@ function App() {
       <Header cartData={cartData}></Header>
       <HeroSection></HeroSection>
       <StatsSection></StatsSection>
-      <ProductsShowcaseSection dataPromise={dataPromise} handleDataForCart={handleDataForCart} cartData={cartData}></ProductsShowcaseSection>
+      <ProductsShowcaseSection dataPromise={dataPromise} handleDataForCart={handleDataForCart} cartData={cartData} setCartData={setCartData}></ProductsShowcaseSection>
     </>
   )
 }

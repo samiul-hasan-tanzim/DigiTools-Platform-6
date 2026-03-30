@@ -1,8 +1,13 @@
 import React from 'react';
 
-const Cart = ({ cartData }) => {
+const Cart = ({ cartData, setCartData }) => {
 
     const totalPrice = cartData.reduce((sum, price) => sum + price.price, 0)
+
+    const handelRemoveItems = (cart) => {
+        const newCarts = cartData.filter(i => i.id !== cart.id)
+        setCartData(newCarts)
+    }
 
     return (
         <div>
@@ -26,7 +31,7 @@ const Cart = ({ cartData }) => {
                                             </div>
                                         </div>
                                         <div>
-                                            <p className='cursor-pointer'>Remove</p>
+                                            <p onClick={() => handelRemoveItems(i)} className='cursor-pointer'>Remove</p>
                                         </div>
                                     </div>
                                 ))
@@ -36,7 +41,7 @@ const Cart = ({ cartData }) => {
                                     <p>Total:</p>
                                     <p>{totalPrice}</p>
                                 </div>
-                                <button className='btn w-full p-7 text-lg rounded-full text-white bg-linear-to-r from-[#4F39F6] to-[#9514FA]'>Proceed to Checkout</button>
+                                <button onClick={() => setCartData([])} className='btn w-full p-7 text-lg rounded-full text-white bg-linear-to-r from-[#4F39F6] to-[#9514FA]'>Proceed to Checkout</button>
                             </div>
                         </div>
                     </div> :

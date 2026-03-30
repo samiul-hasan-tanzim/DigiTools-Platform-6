@@ -2,7 +2,7 @@ import React, { use, useState } from 'react';
 import Products from './Products';
 import Cart from './Cart';
 
-const ProductsShowcaseSection = ({ dataPromise, handleDataForCart, cartData }) => {
+const ProductsShowcaseSection = ({ dataPromise, handleDataForCart, cartData, setCartData }) => {
     const allData = use(dataPromise)
 
     const [activeTab, setActiveTab] = useState('products')
@@ -21,7 +21,7 @@ const ProductsShowcaseSection = ({ dataPromise, handleDataForCart, cartData }) =
             </div>
 
             {
-                activeTab === 'products' ? <Products allData={allData} handleDataForCart={handleDataForCart}></Products> : <Cart cartData={cartData}></Cart>
+                activeTab === 'products' ? <Products allData={allData} handleDataForCart={handleDataForCart}></Products> : <Cart cartData={cartData} setCartData={setCartData}></Cart>
             }
 
 
