@@ -6,6 +6,9 @@ import ProductsShowcaseSection from './components/ProductsShowcaseSection/Produc
 import StatsSection from './components/StatsSection/StatsSection'
 import { toast } from 'react-toastify'
 import GetStarted from './components/GetStarted/GetStarted'
+import PricingSection from './components/PricingSection/PricingSection'
+import CTASection from './components/CTASection/CTASection'
+import FooterSection from './components/FooterSection/FooterSection'
 
 
 
@@ -30,6 +33,7 @@ function App() {
     setCartData([...cartData, data])
   }
 
+
   return (
     <>
       <Header cartData={cartData}></Header>
@@ -37,6 +41,9 @@ function App() {
       <StatsSection></StatsSection>
       <ProductsShowcaseSection dataPromise={dataPromise} handleDataForCart={handleDataForCart} cartData={cartData} setCartData={setCartData}></ProductsShowcaseSection>
       <GetStarted></GetStarted>
+      <PricingSection></PricingSection>
+      <CTASection></CTASection>
+      <FooterSection></FooterSection>
     </>
   )
 }
