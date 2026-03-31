@@ -1,4 +1,5 @@
 import React from 'react';
+import { toast } from 'react-toastify';
 
 const Cart = ({ cartData, setCartData }) => {
 
@@ -10,7 +11,7 @@ const Cart = ({ cartData, setCartData }) => {
     }
 
     return (
-        <div>
+        <div className='w-11/12 md:w-full mx-auto'>
             {
                 cartData.length > 0 ?
                     <div>
@@ -31,7 +32,7 @@ const Cart = ({ cartData, setCartData }) => {
                                             </div>
                                         </div>
                                         <div>
-                                            <p onClick={() => handelRemoveItems(i)} className='cursor-pointer'>Remove</p>
+                                            <p onClick={() => { handelRemoveItems(i); toast.warning('Removed this Product') }} className='cursor-pointer'>Remove</p>
                                         </div>
                                     </div>
                                 ))
@@ -41,7 +42,7 @@ const Cart = ({ cartData, setCartData }) => {
                                     <p>Total:</p>
                                     <p>{totalPrice}</p>
                                 </div>
-                                <button onClick={() => setCartData([])} className='btn w-full p-7 text-lg rounded-full text-white bg-linear-to-r from-[#4F39F6] to-[#9514FA]'>Proceed to Checkout</button>
+                                <button onClick={() => { setCartData([]); toast.success('Purchase is Success') }} className='btn w-full p-7 text-lg rounded-full text-white bg-linear-to-r from-[#4F39F6] to-[#9514FA]'>Proceed to Checkout</button>
                             </div>
                         </div>
                     </div> :

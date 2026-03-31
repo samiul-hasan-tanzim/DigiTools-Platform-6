@@ -3,8 +3,8 @@ import image from '../../assets/banner.png';
 
 const HeroSection = () => {
     return (
-        <div className='container mx-auto flex justify-between items-center mt-15 py-5'>
-            <div className=' flex flex-col gap-5'>
+        <div className='container mx-auto flex flex-col-reverse md:flex-row md:justify-between items-center md:mt-15 py-5'>
+            <div className=' flex flex-col gap-5 items-center md:items-start p-5 py-15 md:py-0 md:p-0'>
                 <div className='bg-[#E1E7FF] w-fit flex items-center rounded-full p-1 px-4 gap-2'>
                     <div className="inline-grid *:[grid-area:1/1]">
                         <div className="status status-primary animate-ping"></div>
@@ -12,10 +12,10 @@ const HeroSection = () => {
                     </div>
                     <p className='font-bold bg-linear-to-r from-[#4F39F6] via-[#7525F8] to-[#9514FA] bg-clip-text text-transparent'> New: AI-Powered Tools Available</p>
                 </div>
-                <p className='w-160 text-7xl font-extrabold'>
+                <p className='text-center md:text-left md:w-90 lg:w-160 text-2xl md:text-4xl lg:text-7xl font-extrabold'>
                     Supercharge Your Digital Workflow
                 </p>
-                <p className='w-130 flex flex-col text-[#627382]'>
+                <p className='w-90 text-center md:text-left md:w-130 flex flex-col text-[#627382]'>
                     Access premium AI tools, design assets, templates, and productivity
                     software—all in one place. Start creating faster today.
                     <span>
@@ -37,7 +37,7 @@ const HeroSection = () => {
                     </div>
                 </div>
             </div>
-            <div>
+            <div className='mobile-width'>
                 <img src={image} alt="" />
             </div>
         </div>

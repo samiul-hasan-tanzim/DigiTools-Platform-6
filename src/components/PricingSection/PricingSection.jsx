@@ -13,14 +13,14 @@ const PricingSection = () => {
     const ctaData = ctaAllData.plans
 
     return (
-        <div className='container mx-auto mt-50'>
-            <h2 className='text-5xl font-extrabold text-center py-5'>Simple, Transparent Pricing</h2>
+        <div className='container mx-auto mt-40'>
+            <h2 className='text-4xl md:text-5xl font-extrabold text-center py-5'>Simple, Transparent Pricing</h2>
             <p className='text-[#627382] text-center pb-15'>Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
-            <div className='grid grid-cols-3'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10'>
                 {
                     ctaData.map((item, i) => (
-                        <div key={i}>
-                            <div className={`card w-96 bg-base-100 shadow-sm border border-black/10 ${item.name === 'Pro' && 'bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white'}`}>
+                        <div key={i} className='w-11/12 md:w-full mx-auto'>
+                            <div className={`card w-full bg-base-100 shadow-sm border border-black/10 ${item.name === 'Pro' && 'bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white'}`}>
                                 <div className="p-5 flex flex-col">
 
                                     {

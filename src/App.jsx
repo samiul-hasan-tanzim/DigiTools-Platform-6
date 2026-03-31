@@ -25,11 +25,11 @@ function App() {
 
     const isFound = cartData.find(i => i.id === data.id)
     if (isFound) {
-      toast.error("Wow so easy!");
+      toast.info("This product is already added in cart!");
       return;
     }
 
-    toast("Wow so easy!");
+    toast.success("Added to the cart!");
     setCartData([...cartData, data])
   }
 

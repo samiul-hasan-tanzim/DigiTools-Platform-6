@@ -1,11 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Card = ({ data, handleDataForCart }) => {
     const { name, description, price, period, tagType, features, icon } = data
+    const [btnText, setBtnText] = useState('Buy Now')
 
     return (
         <div>
-            <div className="card w-96 bg-base-100 shadow-sm">
+            <div className="card bg-base-100 border border-black/5 shadow-sm min-h-100">
                 <div className="card-body">
                     <div className='flex justify-between'>
                         <div className='border border-black/30 w-12 h-12 rounded-full flex items-center justify-center'>
@@ -16,12 +17,12 @@ const Card = ({ data, handleDataForCart }) => {
                                 tagType === 'New' ? 'badge-soft badge-success' : null
                             } relative -top-5 left-5`}>{tagType}</span>
                     </div>
-                    <div className="">
+                    <div className="flex-1 space-y-2">
                         <h2 className="text-3xl font-bold">{name}</h2>
                         <p>{description}</p>
                         <span className="text-xl">${price}/{period}</span>
                     </div>
-                    <ul className="mt-6 flex flex-col gap-2 text-xs">
+                    <ul className="mt-6 flex flex-col gap-2 text-xs flex-1">
 
                         {
                             features.map((feature, i) => (
@@ -33,7 +34,7 @@ const Card = ({ data, handleDataForCart }) => {
                         }
                     </ul>
                     <div className="mt-6">
-                        <button onClick={() => handleDataForCart(data)} className="btn btn-primary btn-block">Buy Now</button>
+                        <button onClick={() => { handleDataForCart(data); setBtnText('Added to cart') }} className="btn btn-primary btn-block">{btnText}</button>
                     </div>
                 </div>
             </div>

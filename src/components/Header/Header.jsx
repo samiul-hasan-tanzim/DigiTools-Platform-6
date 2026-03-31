@@ -4,7 +4,7 @@ import { ShoppingCart } from "lucide-react";
 const Header = ({ cartData }) => {
     return (
         <div className='bg-base-100 shadow-sm font-semibold'>
-            <div className='container mx-auto py-3'>
+            <div className='md:container md:mx-auto py-3'>
                 <div className="navbar">
                     <div className="navbar-start">
                         <div className="dropdown">
@@ -21,7 +21,7 @@ const Header = ({ cartData }) => {
                                 <li><a>FAQ</a></li>
                             </ul>
                         </div>
-                        <a className="text-3xl font-bold bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">DigiTools</a>
+                        <a className="text-2xl md:text-3xl font-bold bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">DigiTools</a>
                     </div>
                     <div className="navbar-center hidden lg:flex">
                         <ul className="menu menu-horizontal px-1">
@@ -39,7 +39,7 @@ const Header = ({ cartData }) => {
                                 cartData.length > 0 ? <p className="relative -top-2 -left-2 bg-red-500 w-4 h-4 text-[10px] text-white flex justify-center items-center rounded-full">{cartData.length}</p> : null
                             }
                         </div>
-                        <p>Login</p>
+                        <p className="hidden md:block">Login</p>
                         <a className="btn rounded-full text-white bg-linear-to-r from-[#4F39F6] to-[#9514FA]">Get Started</a>
                     </div>
                 </div>
